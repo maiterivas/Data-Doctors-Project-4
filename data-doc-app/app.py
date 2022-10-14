@@ -12,7 +12,7 @@ def index():
 
 @app.route("/prediction_model")
 def prediction_model():
-    return render_template("sample-inner-page.html")
+    return render_template("sample-inner-page.html", prediction=prediction, data=data, clf=clf)
 
 if __name__ == "__main__":
     app.run(debug=True)
