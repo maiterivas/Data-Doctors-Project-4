@@ -125,9 +125,11 @@
         <br><br>
         <h1 class="header center orange-text">Symptom Predictor</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Select your symptoms so our predictor can output a disease they may be associated with.</h5>
+          <h5 class="header col s12 light">Select your symptoms so our predictor can output a disease they may be associated with.</h5>  
           <br>
           </h5>
+          <br>
+          <h4> Your predicted disease is: {{ disease }} </h4> 
         </div>
             <div class="row">
       <form action="/prediction_model" methods="POST" class="col s12">
