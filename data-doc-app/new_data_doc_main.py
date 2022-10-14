@@ -21,6 +21,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import confusion_matrix, classification_report
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.metrics import accuracy_score
+import pickle
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -189,4 +190,7 @@ y_true = y_test
 y_pred = classifier.predict(X_test)
 
 print(classification_report(y_true, y_pred))
+
+pickle.dump(forest, open('prediction_model.pkl', 'wb'))
+model = pickle.load(open('prediction_model.pkl', 'rb'))
 
