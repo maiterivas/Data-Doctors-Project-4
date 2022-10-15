@@ -149,6 +149,7 @@ def prediction(data):
         print(disease[a])
     else:
         print("Sorry, your symptoms did not match any prognoses in our database. Please consult your physician.")
+    return disease[a]
 
 """Below we test the validity of the predictor function by running different combinations of symptoms and ensuring that the output is consistent with what is expected. """
 

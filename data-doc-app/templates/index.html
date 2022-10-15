@@ -892,15 +892,15 @@
           <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
 
           <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
-            <form action="/prediction_model" >
-              <input list="symptoms" name="symptom" id = 'symptom'>
-              <datalist id="symptoms">
-                <option value="itching">
-                <option value="skin_rash">
-                <option value="Chrome">
-                <option value="Opera">
-                <option value="Safari">
-              </datalist>
+            <form action="/prediction_model" method = "post">
+              
+              <!-- <input list="symptoms" name="symptom" id = 'symptom'> -->
+              <select name="symptoms" id="symptoms" multiple size = 7>
+                <option value="itching">itching</option>
+                <option value="skin_rash">skin rash</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
               <input type="submit" value = 'Predict Disease'>
             </form>
           </div><!-- End Reservation Form -->

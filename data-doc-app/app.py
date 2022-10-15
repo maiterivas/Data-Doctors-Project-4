@@ -8,17 +8,20 @@ app = Flask(__name__)
 
 model = pickle.load(open('prediction_model.pkl', 'rb'))
 
+
 @app.route("/")
 def index():
     return render_template("index.html")
 
 @app.route("/prediction_model", methods=['POST','GET'])
 def prediction_model():
-
-    symptoms = request.args['symptom']
-    print(symptoms)
+    symptoms = request.form.getlist('symptoms')
+    print(type(symptoms))
+    print(f"the symptom is: {symptoms}")
     #prediction = model.prediction(symptoms)
     pred_output = prediction(symptoms)
+
+    print(f"prediction output is: {pred_output}")
 
     return render_template("sample-inner-page.html", disease = pred_output)
 
