@@ -13,6 +13,21 @@
   <link href="../static/img/favicon.png" rel="icon">
   <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+
+  <!-- multiselect stuff -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../static/css/style.css">
+
+  <script src="../static/js/multi-jquery.min.js"></script>
+  <script src="../static/js/multi-popper.js"></script>
+  <script src="../static/js/multi-bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+  <script src="../static/js/multi-main.js"></script>
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -861,26 +876,37 @@
           <p>Please Enter <span>Your Symptoms</span></p>
         </div>
 
-        <div class="row g-0">
+            <section class="ftco-section">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-md-7 text-center mb-5">
+                    <h2 class="heading-section">Enter Your Symptoms</h2>
+                    <h3 font-size=10px>Use Ctrl+Click(Windows) or CMD+Click(Mac) To Select Multiple Symptoms</h3> 
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-lg-4 d-flex justify-content-center align-items-center">
 
-          <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
+                    <form action="/prediction_model" method = "post">
+                      
+                      <select name="symptoms" class="js-select2" id="symptoms" multiple="multiple" size = 7>
 
-          <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
-            <form action="/prediction_model" >
-              <input list="symptoms" name="symptom" id = 'symptom'>
-              <datalist id="symptoms">
-                <option value="itching">
-                <option value="skin_rash">
-                <option value="Chrome">
-                <option value="Opera">
-                <option value="Safari">
-              </datalist>
-              <input type="submit" value = 'Predict Disease'>
-            </form>
-          </div><!-- End Reservation Form -->
+                      {%for i in range(0, len)%}
+          
+                        <option data-badge="">{{symptoms_list[i]}}</option>
 
-        </div>
+                      {%endfor%}
 
+                      </select>
+                      <input type="submit" value = 'Predict Disease'>
+                    </form>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+
+        
       </div>
     </section><!-- End Symptom Predictor Section -->
 
