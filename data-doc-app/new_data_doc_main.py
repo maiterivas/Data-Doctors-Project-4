@@ -9,6 +9,7 @@ Original file is located at
 
 # Commented out IPython magic to ensure Python compatibility.
 import pandas as pd
+import os
 # %matplotlib inline
 from matplotlib import pyplot as plt
 from sklearn.datasets import make_classification
@@ -26,7 +27,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 #load in the data 
-file = "data-doc-app/static/resources/one_hot_data.csv"
+file = "static/resources/one_hot_data.csv"
 df = pd.read_csv(file)
 df.head()
 
