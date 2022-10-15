@@ -896,6 +896,12 @@
               
               <!-- <input list="symptoms" name="symptom" id = 'symptom'> -->
               <select name="symptoms" id="symptoms" multiple size = 7>
+              {%for i in range(0, len)%}
+  
+                <option>{{symptoms_list[i]}}</option>
+
+              {%endfor%}
+
                 <option value="itching">itching</option>
                 <option value="skin_rash">skin rash</option>
                 <option value="opel">Opel</option>
