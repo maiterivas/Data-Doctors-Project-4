@@ -9,7 +9,6 @@ Original file is located at
 
 # Commented out IPython magic to ensure Python compatibility.
 import pandas as pd
-import os
 # %matplotlib inline
 from matplotlib import pyplot as plt
 from sklearn.datasets import make_classification
