@@ -303,9 +303,9 @@ section {
 .header .btn-book-a-table:focus {
   font-size: 14px;
   color: #fff;
-  background: var(--color-primary);
+  background: white;
   padding: 8px 20px;
-  margin-left: 30px;
+  margin-left: 80px;
   border-radius: 50px;
   transition: 0.3s;
 }
