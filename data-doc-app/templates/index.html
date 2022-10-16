@@ -68,27 +68,10 @@
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#symp_list">Symptoms List</a></li>
-          <li><a href="#events">Events</a></li>
+          <li><a href="symptom_predictor.html">Symptom Predictor</a></li>
           <li><a href="#chefs">The Team</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          
+          <li><a href="#contact">Feedback</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -124,12 +107,12 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>About Us</h2>
-          <p>Learn More <span>About Us</span></p>
+          <h2>About Our Project</h2>
+          <p>Learn More <span>About Our Disease Predictor</span></p>
         </div>
 
         <div class="row gy-4">
-          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/about.jpg) ;" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-7 position-relative" style="" data-aos="fade-up" data-aos-delay="150">
             <div class="call-us position-absolute">
               <h4>If You Are Experiencing a Medical Emergency</h4>
               <p>Contact Emergency Services Immediately</p>
@@ -209,29 +192,29 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Clients</p>
+              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Students</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
               <p>Projects</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
+              <span data-purecounter-start="0" data-purecounter-end="240" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hours Of Class</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Workers</p>
+              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+              <p>DataDoctors</p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -240,7 +223,7 @@
       </div>
     </section><!-- End Stats Counter Section -->
 
-    <!-- ======= Menu Section ======= -->
+    <!-- ======= SYMPTOMS Section ======= -->
     <section id="symp_list" class="menu">
       <div class="container" data-aos="fade-up">
 
@@ -914,12 +897,196 @@
 
 
                 </div>
-              </div><!-- End Dinner Menu Content -->
+              </div><!-- End Symptoms List Content -->
 
         </div>
 
       </div>
-    </section><!-- End Menu Section -->
+    </section><!-- End SYMPTOMS Section -->
+
+    <hr>
+
+        <!-- ======= Symptom Predictor Section ======= -->
+        <section id="book-a-table" class="book-a-table">
+          <div class="container">
+    
+            <div class="section-header">
+              <h2>Disease Predictor</h2>
+              <p>Please Enter <span>Your Symptoms</span></p>
+            </div>
+    
+                <section class="ftco-section">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-md-7 text-center mb-5">
+                        <h2 class="heading-section">Select Your Symptoms</h2>
+                        <h3 font-size=10px>Use Ctrl+Click(Windows) or CMD+Click(Mac) to Select Multiple Symptoms</h3> 
+                      </div>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-lg-4 d-flex justify-content-center align-items-center">
+    
+                        <form action="/prediction_model" method = "post">
+                          
+                          <select name="symptoms" class="js-select2" id="symptoms" multiple="multiple" size = 7>
+    
+                          {%for i in range(0, len)%}
+              
+                            <option data-badge="">{{symptoms_list[i]}}</option>
+    
+                          {%endfor%}
+    
+                          </select>
+                          <input type="submit" value = 'Predict Disease'>
+                        </form>
+    
+                      </div>
+                    </div>
+                  </div>
+                </section>
+    
+            
+          </div>
+        </section><!-- End Symptom Predictor Section -->
+
+
+    <!-- ======= Data Doctors Section ======= -->
+    <section id="chefs" class="chefs section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>About</h2>
+          <p>The <span>Data</span> Doctors</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQHHnSPakALseg/profile-displayphoto-shrink_800_800/0/1537590892811?e=1671667200&v=beta&t=gkYVs2dcBGZ1t68fispLlbE1sOTjRJ4gDwEhYxFNGzI" class="img-fluid" alt="" width="200" height="200">
+                <div class="social">
+
+                  <a href="https://github.com/SydCo99"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/sydney-cohen-159566171/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sydney Cohen</h4>
+                <span></span>
+                <p><a href="https://github.com/SydCo99"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/sydney-cohen-159566171/"><i class="bi bi-linkedin"></i></a></p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQE72sf0pxWI6Q/profile-displayphoto-shrink_800_800/0/1617401029138?e=1671667200&v=beta&t=ffyZeB2vPdbCrC7eH4TJLPcSFcfNMhH9mTobt7vA4fk" class="img-fluid" alt="" width="200" height="200">
+                <div class="social">
+
+                  <a href="https://github.com/maiterivas"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/maiterivas/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Maite Rivas</h4>
+                <p><a href="https://github.com/maiterivas"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/maiterivas/"><i class="bi bi-linkedin"></i></a></p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="https://media-exp1.licdn.com/dms/image/C5103AQFeby5805OiXQ/profile-displayphoto-shrink_800_800/0/1516884373094?e=1671667200&v=beta&t=7ZCEUHOFH9qxELKbaOiUJuV5oW9B8HtprwPT-Un42hg" class="img-fluid" alt="" width="200" height="200">
+                <div class="social">
+
+                  <a href="https://github.com/jimstrale"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/jim-strale-935aba55/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Jim Strale</h4>
+                <p><a href="https://github.com/jimstrale"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/jim-strale-935aba55/"><i class="bi bi-linkedin"></i></a></p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQHBcrPqWBgMug/profile-displayphoto-shrink_800_800/0/1625035890385?e=1671667200&v=beta&t=EJQENNkSs6veb7EJWdlOj9gZ2gqWhnQmVuohssgK6Bc" class="img-fluid" alt="" width="200" height="200">
+                <div class="social">
+
+                  <a href=""><i class="bi bi-github"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Danielle Sears</h4>
+                <p><a href="https://github.com/ohigithub"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/DanielleJS/"><i class="bi bi-linkedin"></i></a></p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+        </div>
+
+      </div>
+    </section><!-- End Chefs Section -->
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>How did you like our Disease Predictor? <span>Let Us Know!</span></p>
+        </div>
+
+        <!--<div class="mapouter"><div class="gmap_canvas"><iframe width="1080" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=633%20Clark%20St,%20Evanston,%20IL%2060208&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a><br><style>.mapouter{position:relative;text-align:right;height:350px;width:1080px;}</style><a href="https://www.embedgooglemap.net">how to add google maps to a website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:1080px;}</style></div></div>-->
+        <!-- <div class="mb-3">
+          <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+        </div>End Google Maps -->
+
+        <div class="row gy-4">
+
+          
+
+        </div>
+
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+          <div class="row">
+            <div class="col-xl-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-xl-6 form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you for trying out our model!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Feedback</button></div>
+        </form>
+        <!--End Contact Form -->
+
+      </div>
+    </section><!-- End Contact Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
@@ -927,7 +1094,7 @@
 
         <div class="section-header">
           <h2>Testimonials</h2>
-          <p>What Are They <span>Saying About Us</span></p>
+          <p>What They Think <span>Of Our Predictor Model</span></p>
         </div>
 
         <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
@@ -1036,255 +1203,6 @@
       </div>
     </section><!-- End Testimonials Section -->
 
-    <!-- ======= Chefs Section ======= -->
-    <section id="chefs" class="chefs section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>About</h2>
-          <p>Our <span>Proffesional</span> Team</p>
-        </div>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="chef-member">
-              <div class="member-img">
-                <img src= {{ url_for('static', filename="assets/img/chefs/chefs-1.jpg") }} class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Sydney Cohen</h4>
-                <span></span>
-                <p><a href="https://github.com/SydCo99"><i class="bi bi-github"></i></a>
-                  <a href="https://www.linkedin.com/in/sydney-cohen-159566171/"><i class="bi bi-linkedin"></i></a></p>
-              </div>
-            </div>
-          </div><!-- End Chefs Member -->
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="chef-member">
-              <div class="member-img">
-                <img src= {{ url_for('static', filename="assets/img/chefs/chefs-2.jpg") }} class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Jim Strale</h4>
-                <p><a href="https://github.com/jimstrale"><i class="bi bi-github"></i></a>
-                  <a href="https://www.linkedin.com/in/jim-strale-935aba55/"><i class="bi bi-linkedin"></i></a></p>
-              </div>
-            </div>
-          </div><!-- End Chefs Member -->
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="chef-member">
-              <div class="member-img">
-                <img src= {{ url_for('static', filename="assets/img/chefs/chefs-3.jpg") }} class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Maite Rivas</h4>
-                <p><a href="https://github.com/maiterivas"><i class="bi bi-github"></i></a>
-                  <a href="https://www.linkedin.com/in/maiterivas/"><i class="bi bi-linkedin"></i></a></p>
-              </div>
-            </div>
-          </div><!-- End Chefs Member -->
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="chef-member">
-              <div class="member-img">
-                <img src= {{ url_for('static', filename="assets/img/chefs/chefs-3.jpg") }} class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Danielle Sears</h4>
-                <p><a href="https://github.com/ohigithub"><i class="bi bi-github"></i></a>
-                  <a href="https://www.linkedin.com/in/DanielleJS/"><i class="bi bi-linkedin"></i></a></p>
-              </div>
-            </div>
-          </div><!-- End Chefs Member -->
-
-        </div>
-
-      </div>
-    </section><!-- End Chefs Section -->
-
-    <!-- ======= Symptom Predictor Section ======= -->
-    <section id="book-a-table" class="book-a-table">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Disease Predictor</h2>
-          <p>Please Enter <span>Your Symptoms</span></p>
-        </div>
-
-            <section class="ftco-section">
-              <div class="container">
-                <div class="row justify-content-center">
-                  <div class="col-md-7 text-center mb-5">
-                    <h2 class="heading-section">Enter Your Symptoms</h2>
-                    <h3 font-size=10px>Use Ctrl+Click(Windows) or CMD+Click(Mac) To Select Multiple Symptoms</h3> 
-                  </div>
-                </div>
-                <div class="row justify-content-center">
-                  <div class="col-lg-4 d-flex justify-content-center align-items-center">
-
-                    <form action="/prediction_model" method = "post">
-                      
-                      <select name="symptoms" class="js-select2" id="symptoms" multiple="multiple" size = 7>
-
-                      {%for i in range(0, len)%}
-          
-                        <option data-badge="">{{symptoms_list[i]}}</option>
-
-                      {%endfor%}
-
-                      </select>
-                      <input type="submit" value = 'Predict Disease'>
-                    </form>
-
-                  </div>
-                </div>
-              </div>
-            </section>
-
-        
-      </div>
-    </section><!-- End Symptom Predictor Section -->
-
-    <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>gallery</h2>
-          <p>Check <span>Our Gallery</span></p>
-        </div>
-
-        <div class="gallery-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Gallery Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Contact</h2>
-          <p>Need Help? <span>Contact Us</span></p>
-        </div>
-
-        <div class="mapouter"><div class="gmap_canvas"><iframe width="1080" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=633%20Clark%20St,%20Evanston,%20IL%2060208&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a><br><style>.mapouter{position:relative;text-align:right;height:350px;width:1080px;}</style><a href="https://www.embedgooglemap.net">how to add google maps to a website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:1080px;}</style></div></div>
-        <!-- <div class="mb-3">
-          <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
-        </div>End Google Maps -->
-
-        <div class="row gy-4">
-
-          <div class="col-md-6">
-            <div class="info-item  d-flex align-items-center">
-              <i class="icon bi bi-map flex-shrink-0"></i>
-              <div>
-                <h3>Our Address</h3>
-                <p>633 Clark St, Evanston, IL 60208</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center">
-              <i class="icon bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>DataDocTeam@gmail.com</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item  d-flex align-items-center">
-              <i class="icon bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+1 702 325 9221</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item  d-flex align-items-center">
-              <i class="icon bi bi-share flex-shrink-0"></i>
-              <div>
-                <h3>Opening Hours</h3>
-                <div><strong>Mon-Sat:</strong> 11AM - 6PM;
-                  <strong>Sunday:</strong> Closed
-                </div>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-        </div>
-
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
-          <div class="row">
-            <div class="col-xl-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-            </div>
-            <div class="col-xl-6 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-          </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
-        </form>
-        <!--End Contact Form -->
-
-      </div>
-    </section><!-- End Contact Section -->
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -1292,49 +1210,8 @@
 
     <div class="container">
       <div class="row gy-3">
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-geo-alt icon"></i>
-          <div>
-            <h4>Address</h4>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022 - US<br>
-            </p>
-          </div>
+        
 
-        </div>
-
-        <div class="col-lg-3 col-md-6 footer-links d-flex">
-          <i class="bi bi-telephone icon"></i>
-          <div>
-            <h4>Reservations</h4>
-            <p>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 footer-links d-flex">
-          <i class="bi bi-clock icon"></i>
-          <div>
-            <h4>Opening Hours</h4>
-            <p>
-              <strong>Mon-Sat: 11AM</strong> - 23PM<br>
-              Sunday: Closed
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Follow Us</h4>
-          <div class="social-links d-flex">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -1348,7 +1225,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://github.com/maiterivas/Data-Doctors-Project-4.git">the DataDoctors</a>
       </div>
     </div>
 

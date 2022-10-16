@@ -1156,7 +1156,7 @@ section {
 .chefs .chef-member .social a {
   transition: color 0.3s;
   color: rgba(55, 55, 63, 0.4);
-  margin: 15px 12px;
+  margin: 8px 10px;
   display: block;
   line-height: 0;
   text-align: center;
@@ -1171,7 +1171,7 @@ section {
 }
 
 .chefs .chef-member .member-info {
-  padding: 10px 15px 20px 15px;
+  padding: 0px;
 }
 
 .chefs .chef-member .member-info h4 {
@@ -1690,7 +1690,7 @@ section {
 .footer .copyright {
   text-align: center;
   padding-top: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  
 }
 
 .footer .credits {
