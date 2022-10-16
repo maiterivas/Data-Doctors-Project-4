@@ -1,5 +1,5 @@
 /**
-* Template Name: Yummy - v1.2.1
+* Tempate Name: Yummy - v1.2.1
 * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -863,7 +863,7 @@ section {
 
 .menu .nav-link {
   margin: 0 10px;
-  padding: 10px 5px;
+  padding: 15px 8px;
   transition: 0.3s;
   color: var(--color-secondary);
   border-radius: 0;
@@ -908,7 +908,7 @@ section {
 }
 
 .menu .tab-content .tab-header {
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .menu .tab-content .tab-header p {
@@ -919,7 +919,7 @@ section {
 }
 
 .menu .tab-content .tab-header h3 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 600;
   color: var(--color-primary);
 }
@@ -930,12 +930,12 @@ section {
 }
 
 .menu .tab-content .menu-item .menu-img {
-  padding: 0 60px;
-  margin-bottom: 15px;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 
 .menu .tab-content .menu-item h4 {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
   color: var(--color-secondary);
   font-family: var(--font-secondary);

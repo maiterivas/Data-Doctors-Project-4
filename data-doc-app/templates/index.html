@@ -67,7 +67,7 @@
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#menu">Menu</a></li>
+          <li><a href="#symp_list">Symptoms List</a></li>
           <li><a href="#events">Events</a></li>
           <li><a href="#chefs">The Team</a></li>
           <li><a href="#gallery">Gallery</a></li>
@@ -241,48 +241,60 @@
     </section><!-- End Stats Counter Section -->
 
     <!-- ======= Menu Section ======= -->
-    <section id="menu" class="menu">
+    <section id="symp_list" class="menu">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
           <h2>Symptom List</h2>
-          <p>Browse Potential <span>Symptoms</span></p>
+          <p>Browse <span>Potential </span>Symptoms</p>
         </div>
 
         <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
 
           <li class="nav-item">
-            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#symp_list-starters">
               <h4>Skin/Nails/Eyes</h4>
             </a>
           </li><!-- End tab nav item -->
 
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#symp_list-breakfast">
               <h4>Gastrointestinal</h4>
             </a><!-- End tab nav item -->
 
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#symp_list-lunch">
               <h4>Cardio/Pulmonary</h4>
             </a>
           </li><!-- End tab nav item -->
 
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#symp_list-dinner">
               <h4>Medical History/Events</h4>
             </a>
           </li><!-- End tab nav item -->
 
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
-              <h4>Physiological</h4>
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#symp_list-physio">
+              <h4>Psychological/Neurological</h4>
             </a>
           </li><!-- End tab nav item -->
 
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
-              <h4>Psychological</h4>
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#symp_list-limb">
+              <h4>Joint/Muscle/Limb</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#symp_list-urine">
+              <h4>Urological</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#symp_list-xtra">
+              <h4>Miscellaneous</h4>
             </a>
           </li><!-- End tab nav item -->
 
@@ -290,7 +302,7 @@
 
         <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
 
-          <div class="tab-pane fade active show" id="menu-starters">
+          <div class="tab-pane fade active show" id="symp_list-starters">
 
             <div class="tab-header text-center">
               <h3>Skin/Nails/Eyes</h3>
@@ -299,142 +311,118 @@
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-1.png") }} class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Blackheads</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-2.png") }} class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Brittle Nails</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-2.png") }} class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Blister</h4>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
                 <h4>Blurred and Distorted Vision</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-3.png") }} class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Bruising</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-4.png") }} class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Dischromic Patches</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-5.png") }} class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Drying and Tingling Lips</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Inflammatory Nails</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Internal Itching</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Itching</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Nodal Skin Eruptions</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Prominent Veins on Calf</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Puffy Face and Eyes</h4>
               </div><!-- Menu Item -->
               
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Pus Filled Pimples</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Red Sore Around Nose</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Red Spots Over Body</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Redness of Eyes</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Silver Like Dusting</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Skin Peeling</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Skin Rash</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Small Dents in Nails</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Sunken Eyes</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Sweating</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Typhos (Toxic Look)</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Ulcers on Tongue</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Watering from Eyes</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Yellow Crust Ooze</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Yellowing of Eyes</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Yellowish Skin</h4>
               </div><!-- Menu Item -->
 
@@ -442,7 +430,7 @@
             </div>
           </div><!-- End Starter Menu Content -->
 
-          <div class="tab-pane fade" id="menu-breakfast">
+          <div class="tab-pane fade" id="symp_list-breakfast">
 
             <div class="tab-header text-center">
               <h3>Gastrointestinal</h3>
@@ -451,145 +439,118 @@
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-1.png") }} class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Abdominal Pain</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-2.png") }} class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Acidity</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-3.png") }} class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Belly Pain</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href={{ url_for('static', filename="img/menu/menu-item-4.png") }} class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Blood in Sputum</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-5.png") }} class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Bloody Stool</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Constipation</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Cramps</h4>
               </div><!-- Menu Item -->
               
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Diarrhoea</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Distention of Abdomen</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Excessive Hunger</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Fluid Overload</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Increased Appetite</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Indigestion</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Irregular Sugar Level</h4>
               </div><!-- Menu Item -->
 
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Irritation in Anus</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Loss of Appetite</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Nausea</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Obesity</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Pain During Bowel Movements</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Pain in Anal Region</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Passage of Gasses</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Stomach Bleeding</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Stomach Pain</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Swelling of Stomach</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Vomiting</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Weight Gain</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Weight Loss</h4>
               </div><!-- Menu Item -->
 
             </div>
           </div><!-- End Breakfast Menu Content -->
 
-          <div class="tab-pane fade" id="menu-lunch">
+          <div class="tab-pane fade" id="symp_list-lunch">
 
             <div class="tab-header text-center">
               <h3>Cardio/Pulmonary</h3>
@@ -598,74 +559,61 @@
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href={{ url_for('static', filename="img/menu/menu-item-1.png") }} class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Chest Pain</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-2.png") }} class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Chills</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-3.png") }} class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Cold Hands and Feet</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-4.png") }} class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Cough</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href={{ url_for('static', filename="img/menu/menu-item-5.png") }} class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Fast Heart Rate</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Palpitations</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Shivering</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Swelled Lymph Nodes</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Swelling Joints</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Swelling of Stomach</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Swollen Blood Vessels</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Swollen Extremeties</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Swollen Legs</h4>
               </div><!-- Menu Item -->
 
             </div>
           </div><!-- End Lunch Menu Content -->
 
-          <div class="tab-pane fade" id="menu-dinner">
+          <div class="tab-pane fade" id="symp_list-dinner">
 
             <div class="tab-header text-center">
               <h3>Medical History/Events</h3>
@@ -674,27 +622,22 @@
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href={{ url_for('static', filename="img/menu/menu-item-1.png") }} class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Extra Marital Contacts</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href= {{ url_for('static', filename="img/menu/menu-item-2.png") }} class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Family History</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
                 <h4>History of Alcohol Consumption</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Receiving Blood Transfusion</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Receiving Unsterile Injections</h4>
               </div><!-- Menu Item -->
 
@@ -702,152 +645,276 @@
             </div>
           </div><!-- End Dinner Menu Content -->
 
-            <div class="tab-pane fade" id="menu-breakfast">
+            <div class="tab-pane fade" id="symp_list-physio">
 
               <div class="tab-header text-center">
-                <h3>Physiological</h3>
+                <h3>Psychological/Neurological</h3>
               </div>
 
               <div class="row gy-5">
 
                 <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-1.png") }} class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Abdominal Pain</h4>
+                  <h4>Altered Sensorium</h4>
                 </div><!-- Menu Item -->
 
                 <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-2.png") }} class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Acidity</h4>
+                  <h4>Anxiety</h4>
                 </div><!-- Menu Item -->
 
                 <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-3.png") }} class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Belly Pain</h4>
+                  <h4>Coma</h4>
                 </div><!-- Menu Item -->
 
                 <div class="col-lg-4 menu-item">
-                  <a href={{ url_for('static', filename="img/menu/menu-item-4.png") }} class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Blood in Sputum</h4>
+                  <h4>Depression</h4>
                 </div><!-- Menu Item -->
 
                 <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-5.png") }} class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Bloody Stool</h4>
+                  <h4>Dizziness</h4>
                 </div><!-- Menu Item -->
 
                 <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Constipation</h4>
+                  <h4>Fatigue</h4>
                 </div><!-- Menu Item -->
 
                 <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Cramps</h4>
+                  <h4>Headache</h4>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <h4>Irritability</h4>
                 </div><!-- Menu Item -->
                 
                 <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Diarrhoea</h4>
+                  <h4>Lack of Concentration</h4>
                 </div><!-- Menu Item -->
 
                 <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Distention of Abdomen</h4>
+                  <h4>Lethargy</h4>
                 </div><!-- Menu Item -->
 
                 <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Excessive Hunger</h4>
+                  <h4>Loss of Balance</h4>
                 </div><!-- Menu Item -->
 
                 <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Fluid Overload</h4>
+                  <h4>Loss of Smell</h4>
                 </div><!-- Menu Item -->
 
                 <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Increased Appetite</h4>
+                  <h4>Malaise</h4>
                 </div><!-- Menu Item -->
 
                 <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Indigestion</h4>
+                  <h4>Mood Swings</h4>
                 </div><!-- Menu Item -->
 
                 <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Irregular Sugar Level</h4>
+                  <h4>Restlessness</h4>
                 </div><!-- Menu Item -->
 
 
                 <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Irritation in Anus</h4>
+                  <h4>Slurred Speech</h4>
                 </div><!-- Menu Item -->
 
                 <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Loss of Appetite</h4>
+                  <h4>Unsteadiness</h4>
                 </div><!-- Menu Item -->
 
                 <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Nausea</h4>
-                </div><!-- Menu Item -->
-
-                <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Obesity</h4>
-                </div><!-- Menu Item -->
-
-                <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Pain During Bowel Movements</h4>
-                </div><!-- Menu Item -->
-
-                <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Pain in Anal Region</h4>
-                </div><!-- Menu Item -->
-
-                <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Passage of Gasses</h4>
-                </div><!-- Menu Item -->
-
-                <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Stomach Bleeding</h4>
-                </div><!-- Menu Item -->
-
-                <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Stomach Pain</h4>
-                </div><!-- Menu Item -->
-
-                <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Swelling of Stomach</h4>
-                </div><!-- Menu Item -->
-
-                <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Vomiting</h4>
-                </div><!-- Menu Item -->
-
-                <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Weight Gain</h4>
-                </div><!-- Menu Item -->
-
-                <div class="col-lg-4 menu-item">
-                  <a href= {{ url_for('static', filename="img/menu/menu-item-6.png") }} class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                  <h4>Weight Loss</h4>
+                  <h4>Visual Disturbances</h4>
                 </div><!-- Menu Item -->
 
               </div>
             </div><!-- End Breakfast Menu Content -->
+            <div class="tab-pane fade" id="symp_list-limb">
+
+              <div class="tab-header text-center">
+                <h3>Joint/Muscle/Limb</h3>
+              </div>
+
+              <div class="row gy-5">
+
+                <div class="col-lg-4 menu-item">
+                  <h4>Back Pain</h4>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <h4>Hip Joint Pain</h4>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <h4>Joint Pain</h4>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <h4>Knee Pain</h4>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <h4>Movement Stiffness</h4>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <h4>Muscle Pain</h4>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <h4>Muscle Wasting</h4>
+                </div><!-- Menu Item -->
+                
+                <div class="col-lg-4 menu-item">
+                  <h4>Muscle Weakness</h4>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <h4>Neck Pain</h4>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <h4>Painful Walking</h4>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <h4>Spinning Movements</h4>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <h4>Stiff Neck</h4>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <h4>Weakness in Limbs</h4>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <h4>Weakness of One Body Side</h4>
+                </div><!-- Menu Item -->
+
+              </div>
+            </div><!-- End Breakfast Menu Content -->
+            <div class="tab-pane fade" id="symp_list-urine">
+
+              <div class="tab-header text-center">
+                <h3>Urological</h3>
+              </div>
+  
+              <div class="row gy-5">
+  
+                <div class="col-lg-4 menu-item">
+                  <h4>Bladder Discomfort</h4>
+                </div><!-- Menu Item -->
+  
+                <div class="col-lg-4 menu-item">
+                  <h4>Burning Micturition</h4>
+                </div><!-- Menu Item -->
+  
+                <div class="col-lg-4 menu-item">
+                  <h4>Continuous Feel of Urine</h4>
+                </div><!-- Menu Item -->
+  
+                <div class="col-lg-4 menu-item">
+                  <h4>Dark Urine</h4>
+                </div><!-- Menu Item -->
+  
+                <div class="col-lg-4 menu-item">
+                  <h4>Foul Smell of Urine</h4>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <h4>Polyuria</h4>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <h4>Spotting Urination</h4>
+                </div><!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <h4>Yellow Urine</h4>
+                </div><!-- Menu Item -->
+  
+              </div>
+            </div><!-- End Dinner Menu Content -->
+            <div class="tab-pane fade" id="symp_list-xtra">
+
+                <div class="tab-header text-center">
+                  <h3>Miscellaneous</h3>
+                </div>
+
+                <div class="row gy-5">
+
+                  <div class="col-lg-4 menu-item">
+                    <h4>Abnormal Menstruation</h4>
+                  </div><!-- Menu Item -->
+
+                  <div class="col-lg-4 menu-item">
+                    <h4>Acute Liver Failure</h4>
+                  </div><!-- Menu Item -->
+
+                  <div class="col-lg-4 menu-item">
+                    <h4>Blood in Sputum</h4>
+                  </div><!-- Menu Item -->
+
+                  <div class="col-lg-4 menu-item">
+                    <h4>Congestion</h4>
+                  </div><!-- Menu Item -->
+
+                  <div class="col-lg-4 menu-item">
+                    <h4>Cough</h4>
+                  </div><!-- Menu Item -->
+
+                  <div class="col-lg-4 menu-item">
+                    <h4>Dehydration</h4>
+                  </div><!-- Menu Item -->
+
+                  <div class="col-lg-4 menu-item">
+                    <h4>Enlarged Thyroid</h4>
+                  </div><!-- Menu Item -->
+
+                  <div class="col-lg-4 menu-item">
+                    <h4>High Fever</h4>
+                  </div><!-- Menu Item -->
+
+                  <div class="col-lg-4 menu-item">
+                    <h4>Mild Fever</h4>
+                  </div><!-- Menu Item -->
+
+                  <div class="col-lg-4 menu-item">
+                    <h4>Mucoid Sputum</h4>
+                  </div><!-- Menu Item -->
+
+                  <div class="col-lg-4 menu-item">
+                    <h4>Patches in Throat</h4>
+                  </div><!-- Menu Item -->
+
+                  <div class="col-lg-4 menu-item">
+                    <h4>Phlegm</h4>
+                  </div><!-- Menu Item -->
+
+                  <div class="col-lg-4 menu-item">
+                    <h4>Runny Nose</h4>
+                  </div><!-- Menu Item -->
+
+                  <div class="col-lg-4 menu-item">
+                    <h4>Rusty Sputum</h4>
+                  </div><!-- Menu Item -->
+
+                  <div class="col-lg-4 menu-item">
+                    <h4>Scurring</h4>
+                  </div><!-- Menu Item -->
+
+                  <div class="col-lg-4 menu-item">
+                    <h4>Sinus Pressure</h4>
+                  </div><!-- Menu Item -->
+
+                  <div class="col-lg-4 menu-item">
+                    <h4>Throat Irritation</h4>
+                  </div><!-- Menu Item -->
+
+
+                </div>
+              </div><!-- End Dinner Menu Content -->
 
         </div>
 
