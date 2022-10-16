@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect, request
 from flask_pymongo import PyMongo
-from new_data_doc_main import prediction, forest
+from predictor_main import prediction, forest
 import pickle
 
 
