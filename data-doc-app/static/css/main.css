@@ -302,19 +302,16 @@ section {
 .header .btn-book-a-table,
 .header .btn-book-a-table:focus {
   font-size: 14px;
+  text-align: center;
   color: #fff;
-  background: white;
+  background: rgba(206, 18, 18, 0.8);
   padding: 8px 20px;
   margin-left: 80px;
   border-radius: 50px;
   transition: 0.3s;
 }
 
-.header .btn-book-a-table:hover,
-.header .btn-book-a-table:focus:hover {
-  color: #fff;
-  background: rgba(206, 18, 18, 0.8);
-}
+
 
 section {
   scroll-margin-top: 90px;
@@ -1156,7 +1153,7 @@ section {
 .chefs .chef-member .social a {
   transition: color 0.3s;
   color: rgba(55, 55, 63, 0.4);
-  margin: 8px 10px;
+  margin: 10px 10px;
   display: block;
   line-height: 0;
   text-align: center;

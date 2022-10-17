@@ -63,7 +63,7 @@ def prediction_model():
 
     print(f"prediction output is: {pred_output}")
 
-    return render_template("sample-inner-page.html", disease = pred_output)
+    return render_template("symptom_predictor.html", disease = pred_output, len = len(symptoms_list), symptoms_list = symptoms_list)
 
 if __name__ == "__main__":
     app.run(debug=True)

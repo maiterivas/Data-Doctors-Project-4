@@ -5,15 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>[Template] Sample Inner Page</title>
+  <title>Symptom Predictor Page</title>
 
-  <script>
-  function makeSymptomOptions() {
-    var d
-  
-  }
-  
-  </script>
 
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -45,7 +38,6 @@
   ======================================================== -->
 </head>
 
-<body onload="makeSymptomOptions()">
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
@@ -58,35 +50,10 @@
       </a>
 
       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#chefs">Chefs</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+       
       </nav><!-- .navbar -->
 
-      <a class="btn-book-a-table" href="#book-a-table">Symptom Predictor</a>
+      <a class="btn-book-a-table" href="#book-a-table">Disease Predictor</a>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
@@ -100,43 +67,73 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Sample Predictor Page</h2>
+          <h2>Disease Predictor</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Sample Predictor Page</li>
+            <li>Disease Predictor</li>
           </ol>
         </div>
 
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <section class="sample-page">
-      <div class="container" data-aos="fade-up">
-
-        <p>
-          You can duplicate this sample page and create any number of inner pages you like!
-        </p>
-
-      </div>
-    </section>
+  
 
     <div class="section no-pad-bot" id="index-banner">
       <div class="container">
         <br><br>
-        <h1 class="header center orange-text">Symptom Predictor</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Select your symptoms so our predictor can output a disease they may be associated with.</h5>  
+          
+
+                  <!-- ======= Symptom Predictor Section ======= -->
+        <section id="book-a-table" class="book-a-table">
+          <div class="container">
+    
+            <div class="section-header">
+              <h2>Disease Predictor</h2>
+              <p>Please Enter <span>Your Symptoms</span></p>
+            </div>
+    
+                <section class="ftco-section">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-md-7 text-center mb-5">
+                        <h2 class="heading-section">Select Your Symptoms</h2>
+                        <h3 font-size=10px>Use Ctrl+Click(Windows) or CMD+Click(Mac) to Select Multiple Symptoms</h3> 
+                      </div>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-lg-4 d-flex justify-content-center align-items-center">
+    
+                        <form action="/prediction_model" method = "post">
+                          
+                          <select name="symptoms" class="js-select2" id="symptoms" multiple="multiple" size = 7>
+    
+                          {%for i in range(0, len)%}
+              
+                            <option data-badge="">{{symptoms_list[i]}}</option>
+    
+                          {%endfor%}
+    
+                          </select>
+                          <input type="submit" value = 'Predict Disease'>
+                        </form>
+    
+                      </div>
+                    </div>
+                  </div>
+                </section>
+    
+            
+          </div>
+        </section><!-- End Symptom Predictor Section -->
+
+          <hr>
           <br>
-          </h5>
-          <br>
-          <h4> Your predicted disease is: {{ disease }} </h4> 
+          <h3> Your predicted disease is: {{ disease }} </h3> 
+          <br><br><br>
+          <h5 class="header col s12 light"> Ready to try it again? Select your symptoms so our predictor can output a disease they may be associated with.</h5>
         </div>
-            <div class="row">
-      <form action="/prediction_model" methods="POST" class="col s12">
-
-
-      </form> 
-      </div>
     </div>
 
   </main><!-- End #main -->
@@ -144,55 +141,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
-    <div class="container">
-      <div class="row gy-3">
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-geo-alt icon"></i>
-          <div>
-            <h4>Address</h4>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022 - US<br>
-            </p>
-          </div>
-
-        </div>
-
-        <div class="col-lg-3 col-md-6 footer-links d-flex">
-          <i class="bi bi-telephone icon"></i>
-          <div>
-            <h4>Reservations</h4>
-            <p>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 footer-links d-flex">
-          <i class="bi bi-clock icon"></i>
-          <div>
-            <h4>Opening Hours</h4>
-            <p>
-              <strong>Mon-Sat: 11AM</strong> - 23PM<br>
-              Sunday: Closed
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Follow Us</h4>
-          <div class="social-links d-flex">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
+   
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>DataDoctors</span></strong>. <br>*We are not medically licensed professionals.
@@ -202,7 +151,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://github.com/maiterivas/Data-Doctors-Project-4.git">the DataDoctors</a>
       </div>
     </div>
 
