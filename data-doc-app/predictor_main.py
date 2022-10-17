@@ -26,10 +26,10 @@ import warnings
 warnings.filterwarnings("ignore")
 
 #load in the data 
-#file = "data-doc-app/static/resources/one_hot_data.csv"
+file = "data-doc-app/static/resources/one_hot_data.csv"
 
 #maite needs this line for app.py to run
-file = "static/resources/one_hot_data.csv"
+#file = "static/resources/one_hot_data.csv"
 
 df = pd.read_csv(file)
 df.head()
