@@ -50,7 +50,14 @@
       </a>
 
       <nav id="navbar" class="navbar">
-       
+        <ul>
+          <li><a href="../#hero">Home</a></li>
+          <li><a href="../#about">About</a></li>
+          <li><a href="../#symp_list">Symptoms List</a></li>
+          <li><a href="../#book-a-table">Predictor</a></li>
+          <li><a href="../#chefs">The Team</a></li>
+          <li><a href="../#testimonials">Testimonias</a></li>
+        </ul>
       </nav><!-- .navbar -->
 
       <a class="btn-book-a-table" href="#book-a-table">Disease Predictor</a>
@@ -69,7 +76,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Disease Predictor</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../#hero">Home</a></li>
             <li>Disease Predictor</li>
           </ol>
         </div>
@@ -84,12 +91,18 @@
         <br><br>
         <div class="row center">
           
-
-                  <!-- ======= Symptom Predictor Section ======= -->
-        <section id="book-a-table" class="book-a-table">
           <div class="container">
-    
-            <div class="section-header">
+            <h3> Your predicted disease is: {{ disease }} </h3> 
+            <br><br><br>
+            <h5 class="header col s12 light"> Ready to try it again? Select your symptoms so our predictor can output a disease they may be associated with.</h5>
+             <hr>
+
+        <!-- ======= Symptom Predictor Section ======= -->
+
+           <section id="book-a-table" class="book-a-table">
+          
+           <br>
+          <div class="section-header">
               <h2>Disease Predictor</h2>
               <p>Please Enter <span>Your Symptoms</span></p>
             </div>
@@ -128,11 +141,7 @@
           </div>
         </section><!-- End Symptom Predictor Section -->
 
-          <hr>
-          <br>
-          <h3> Your predicted disease is: {{ disease }} </h3> 
-          <br><br><br>
-          <h5 class="header col s12 light"> Ready to try it again? Select your symptoms so our predictor can output a disease they may be associated with.</h5>
+          
         </div>
     </div>
 

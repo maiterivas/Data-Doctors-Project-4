@@ -819,7 +819,7 @@ section {
 # Stats Counter Section
 --------------------------------------------------------------*/
 .stats-counter {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/stats-bg.jpg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://youthincmag.com/wp-content/uploads/2020/07/LinkedIn.jpeg") center center;
   background-size: cover;
   padding: 100px 0;
 }
